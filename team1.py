@@ -7,12 +7,12 @@
 ####
 
 team_name = 'BA' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = '>< Strategy'
+strategy_description = 'Will choose based on if c or b has more'
     
 
 
-def move(their_history):
+def move(their_history,my_history,my_score,their_score):
     '''will only take their history into acocunt when moving'''
     thc= their_history.count('b') + their_history.count('c')
     bhalf= their_history.count('b') > their_history.count('c')
